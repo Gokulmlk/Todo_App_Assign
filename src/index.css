@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply bg-linear-to-br from-amber-50 via-orange-50 to-rose-50 min-h-screen font-sans;
+    @apply bg-gradient-to-br from-slate-100 via-blue-100 to-purple-100 min-h-screen font-sans;
   }
 }
 

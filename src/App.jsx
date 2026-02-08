@@ -53,7 +53,7 @@ function handleKeyPress (e){
     )
   }
 
-  // Calculate statistics
+  // Calculate Work
   const totalTodos = todos.length
   const completedTodos = todos.filter((todo) => todo.completed).length
   const activeTodos = totalTodos - completedTodos

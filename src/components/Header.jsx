@@ -6,9 +6,10 @@ function Header({ totalTodos, completedTodos, activeTodos }) {
         <div>
              {/* Title */}
             <h1 className="text-6xl font-bold 
-                           bg-linear-to-r from-orange-600 via-rose-600 to-pink-600 
-                           bg-clip-text text-transparent mb-5">
-              My To-Do List
+               bg-gradient-to-r from-orange-600 via-rose-600 to-pink-600 
+               bg-clip-text text-transparent mb-2 pb-2
+               animate-glow">
+            My To-Do List
             </h1>
 
             <p className="text-gray-600 text-lg font-light mb-10">

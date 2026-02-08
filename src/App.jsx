@@ -4,7 +4,15 @@ import ToDoList from './components/ToDoList'
 
 
 function App() {
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([
+    {
+      id: Date.now(),
+      text:"Waekup At 4AM & Solve one DSA Question",
+      completed:false
+    }
+  ])
+  console.log(todos);
+  
   const [inputValue, setInputValue] = useState('')
 
   // Add new todo

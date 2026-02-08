@@ -6,18 +6,18 @@ function ToDoItem({ todo, toggleComplete, deleteTodo, editTodo }) {
   const [isEditing, setIsEditing] = useState(false)
   const [editText, setEditText] = useState(todo.text)
 
-  const handleEdit = () => {
+  function handleEdit(){
     if (editText.trim() === '') return
     editTodo(todo.id, editText)
     setIsEditing(false)
   }
 
-  const handleCancel = () => {
+  function handleCancel(){
     setEditText(todo.text)
     setIsEditing(false)
   }
 
-  const handleKeyPress = (e) => {
+  function handleKeyPress(e){
     if (e.key === 'Enter') {
       handleEdit()
     } else if (e.key === 'Escape') {
